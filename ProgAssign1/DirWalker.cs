@@ -40,7 +40,7 @@ namespace ProgAssign1
                 
                 string projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                 string outputFilePath = Path.Combine(projectRoot, "Output", "Output.csv");
-                string logFilePath = Path.Combine(projectRoot, "Log", "log.txt");
+                string logFilePath = Path.Combine(projectRoot, "logs", "log.txt");
 
                 _logger = new StreamWriter(logFilePath);
 
